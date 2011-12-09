@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: testapp-solr_development
+  pool: 5
+  username: testapp-solr
+  password:
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: testapp-solr_test
+  pool: 5
+  username: testapp-solr
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: testapp-solr_production
+  pool: 5
+  username: testapp-solr
+  password:
+
+cucumber:
+  <<: *test
